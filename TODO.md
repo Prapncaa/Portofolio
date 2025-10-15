@@ -1,2 +1,5 @@
-- [x] Fix mismatched href attributes in gallery overlays in index.html
-- [x] Fix mismatched href attributes in gallery overlays in protfolio.html
+- [x] Fix image paths in index.html to include 'jonson-master/' prefix for assets
+- [x] Verify all image paths are consistent across files
+- [x] Test that images load correctly after changesi- [x] Fix image paths in index.html to include 'jonson-master/' prefix for assets
+- [x] Verify all image paths are consistent across files
+- [ ] Test that images load correctly after changes
