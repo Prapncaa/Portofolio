@@ -1,0 +1,2 @@
+- [x] Fix mismatched href attributes in gallery overlays in index.html
+- [x] Fix mismatched href attributes in gallery overlays in protfolio.html
