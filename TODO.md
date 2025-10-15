@@ -1,5 +1,5 @@
-- [x] Fix image paths in index.html to include 'jonson-master/' prefix for assets
-- [x] Verify all image paths are consistent across files
-- [x] Test that images load correctly after changesi- [x] Fix image paths in index.html to include 'jonson-master/' prefix for assets
-- [x] Verify all image paths are consistent across files
+- [ ] Update image src paths in index.html to include 'jonson-master/' prefix
+- [ ] Update image src paths in portfolio.html to include 'jonson-master/' prefix
+- [ ] Update local image src paths in arts.html to include 'jonson-master/' prefix
+- [ ] Update CV download link in index.html to include 'jonson-master/' prefix
 - [ ] Test that images load correctly after changes
