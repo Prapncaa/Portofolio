@@ -363,14 +363,24 @@
         }
 
         .mobile-nav {
-            display: none;
-            position: absolute;
+            position: fixed;
             top: 100%;
             left: 0;
             width: 100%;
             background: rgba(10, 10, 10, 0.95);
             backdrop-filter: blur(20px);
+            transform: translateY(-100%);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1001;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .mobile-nav.active {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
         }
 
         .mobile-nav-links {
@@ -450,7 +460,6 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#about">About</a></li>
                 <li><a href="index.html#experience">Experience</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="arts.html">Arts</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
             </ul>
@@ -466,7 +475,6 @@
                 <a href="index.html">Home</a>
                 <a href="index.html#about">About</a>
                 <a href="index.html#experience">Experience</a>
-                <a href="portfolio.html">Portfolio</a>
                 <a href="arts.html">Arts</a>
                 <a href="index.html#contact">Contact</a>
             </div>
@@ -517,7 +525,7 @@
 
             <!-- Sketch -->
             <div class="art-item scroll-animate" data-category="sketch">
-                <img class="art-img" src="jonson-master/assets/img/gallery/arts/1.jpg" alt="Sketch 1">
+                <img class="art-img" src="assets/img/gallery/arts/1.jpg" alt="Sketch 1">
                 <div class="art-overlay">
                     <h3 class="art-title">Sketch 1</h3>
                     <p class="art-category">Sketch</p>
@@ -525,7 +533,7 @@
             </div>
 
             <div class="art-item scroll-animate" data-category="sketch">
-                <img class="art-img" src="jonson-master/assets/img/gallery/arts/2.jpg" alt="Sketch 2">
+                <img class="art-img" src="assets/img/gallery/arts/2.jpg" alt="Sketch 2">
                 <div class="art-overlay">
                     <h3 class="art-title">Sketch 2</h3>
                     <p class="art-category">Sketch</p>
@@ -533,7 +541,7 @@
             </div>
 
             <div class="art-item scroll-animate" data-category="sketch">
-                <img class="art-img" src="jonson-master/assets/img/gallery/arts/3.jpg" alt="Sketch 3">
+                <img class="art-img" src="assets/img/gallery/arts/3.jpg" alt="Sketch 3">
                 <div class="art-overlay">
                     <h3 class="art-title">Sketch 3</h3>
                     <p class="art-category">Sketch</p>
@@ -541,7 +549,7 @@
             </div>
 
             <div class="art-item scroll-animate" data-category="sketch">
-                <img class="art-img" src="jonson-master/assets/img/gallery/arts/4.jpg" alt="Sketch 4">
+                <img class="art-img" src="assets/img/gallery/arts/4.jpg" alt="Sketch 4">
                 <div class="art-overlay">
                     <h3 class="art-title">Sketch 4</h3>
                     <p class="art-category">Sketch</p>
@@ -549,7 +557,7 @@
             </div>
 
             <div class="art-item scroll-animate" data-category="sketch">
-                <img class="art-img" src="jonson-master/assets/img/gallery/arts/5.jpg" alt="Sketch 5">
+                <img class="art-img" src="assets/img/gallery/arts/5.jpg" alt="Sketch 5">
                 <div class="art-overlay">
                     <h3 class="art-title">Sketch 5</h3>
                     <p class="art-category">Sketch</p>
@@ -557,7 +565,7 @@
             </div>
 
             <div class="art-item scroll-animate" data-category="sketch">
-                <img class="art-img" src="jonson-master/assets/img/gallery/arts/6.jpg" alt="Sketch 6">
+                <img class="art-img" src="assets/img/gallery/arts/6.jpg" alt="Sketch 6">
                 <div class="art-overlay">
                     <h3 class="art-title">Sketch 6</h3>
                     <p class="art-category">Sketch</p>
@@ -565,7 +573,7 @@
             </div>
 
             <div class="art-item scroll-animate" data-category="sketch">
-                <img class="art-img" src="jonson-master/assets/img/gallery/arts/7.jpg" alt="Sketch 7">
+                <img class="art-img" src="assets/img/gallery/arts/7.jpg" alt="Sketch 7">
                 <div class="art-overlay">
                     <h3 class="art-title">Sketch 7</h3>
                     <p class="art-category">Sketch</p>
@@ -573,7 +581,7 @@
             </div>
 
             <div class="art-item scroll-animate" data-category="sketch">
-                <img class="art-img" src="jonson-master/assets/img/gallery/arts/8.jpg" alt="Sketch 8">
+                <img class="art-img" src="assets/img/gallery/arts/8.jpg" alt="Sketch 8">
                 <div class="art-overlay">
                     <h3 class="art-title">Sketch 8</h3>
                     <p class="art-category">Sketch</p>
@@ -581,7 +589,7 @@
             </div>
 
             <div class="art-item scroll-animate" data-category="sketch">
-                <img class="art-img" src="jonson-master/assets/img/gallery/arts/9.jpg" alt="Sketch 9">
+                <img class="art-img" src="assets/img/gallery/arts/9.jpg" alt="Sketch 9">
                 <div class="art-overlay">
                     <h3 class="art-title">Sketch 9</h3>
                     <p class="art-category">Sketch</p>
@@ -589,7 +597,7 @@
             </div>
 
             <div class="art-item scroll-animate" data-category="sketch">
-                <img class="art-img" src="jonson-master/assets/img/gallery/arts/10.jpg" alt="Sketch 10">
+                <img class="art-img" src="assets/img/gallery/arts/10.jpg" alt="Sketch 10">
                 <div class="art-overlay">
                     <h3 class="art-title">Sketch 10</h3>
                     <p class="art-category">Sketch</p>
@@ -597,7 +605,7 @@
             </div>
 
             <div class="art-item scroll-animate" data-category="sketch">
-                <img class="art-img" src="jonson-master/assets/img/gallery/arts/11.jpg" alt="Sketch 11">
+                <img class="art-img" src="assets/img/gallery/arts/11.jpg" alt="Sketch 11">
                 <div class="art-overlay">
                     <h3 class="art-title">Sketch 11</h3>
                     <p class="art-category">Sketch</p>
@@ -605,7 +613,7 @@
             </div>
 
             <div class="art-item scroll-animate" data-category="sketch">
-                <img class="art-img" src="jonson-master/assets/img/gallery/arts/12.jpg" alt="Sketch 12">
+                <img class="art-img" src="assets/img/gallery/arts/12.jpg" alt="Sketch 12">
                 <div class="art-overlay">
                     <h3 class="art-title">Sketch 12</h3>
                     <p class="art-category">Sketch</p>
@@ -613,7 +621,7 @@
             </div>
 
             <div class="art-item scroll-animate" data-category="sketch">
-                <img class="art-img" src="jonson-master/assets/img/gallery/arts/13.jpg" alt="Sketch 13">
+                <img class="art-img" src="assets/img/gallery/arts/13.jpg" alt="Sketch 13">
                 <div class="art-overlay">
                     <h3 class="art-title">Sketch 13</h3>
                     <p class="art-category">Sketch</p>
@@ -621,7 +629,7 @@
             </div>
 
             <div class="art-item scroll-animate" data-category="sketch">
-                <img class="art-img" src="jonson-master/assets/img/gallery/arts/14.jpg" alt="Sketch 14">
+                <img class="art-img" src="assets/img/gallery/arts/14.jpg" alt="Sketch 14">
                 <div class="art-overlay">
                     <h3 class="art-title">Sketch 14</h3>
                     <p class="art-category">Sketch</p>
@@ -629,7 +637,7 @@
             </div>
 
             <div class="art-item scroll-animate" data-category="sketch">
-                <img class="art-img" src="jonson-master/assets/img/gallery/arts/15.jpg" alt="Sketch 15">
+                <img class="art-img" src="assets/img/gallery/arts/15.jpg" alt="Sketch 15">
                 <div class="art-overlay">
                     <h3 class="art-title">Sketch 15</h3>
                     <p class="art-category">Sketch</p>
@@ -637,7 +645,7 @@
             </div>
 
             <div class="art-item scroll-animate" data-category="sketch">
-                <img class="art-img" src="jonson-master/assets/img/gallery/arts/16.jpg" alt="Sketch 16">
+                <img class="art-img" src="assets/img/gallery/arts/16.jpg" alt="Sketch 16">
                 <div class="art-overlay">
                     <h3 class="art-title">Sketch 16</h3>
                     <p class="art-category">Sketch</p>
@@ -645,7 +653,7 @@
             </div>
 
             <div class="art-item scroll-animate" data-category="sketch">
-                <img class="art-img" src="jonson-master/assets/img/gallery/arts/17.jpg" alt="Sketch 17">
+                <img class="art-img" src="assets/img/gallery/arts/17.jpg" alt="Sketch 17">
                 <div class="art-overlay">
                     <h3 class="art-title">Sketch 17</h3>
                     <p class="art-category">Sketch</p>
@@ -653,7 +661,7 @@
             </div>
 
             <div class="art-item scroll-animate" data-category="sketch">
-                <img class="art-img" src="jonson-master/assets/img/gallery/arts/18.jpg" alt="Sketch 18">
+                <img class="art-img" src="assets/img/gallery/arts/18.jpg" alt="Sketch 18">
                 <div class="art-overlay">
                     <h3 class="art-title">Sketch 18</h3>
                     <p class="art-category">Sketch</p>
@@ -661,7 +669,7 @@
             </div>
 
             <div class="art-item scroll-animate" data-category="sketch">
-                <img class="art-img" src="jonson-master/assets/img/gallery/arts/19.jpg" alt="Sketch 19">
+                <img class="art-img" src="assets/img/gallery/arts/19.jpg" alt="Sketch 19">
                 <div class="art-overlay">
                     <h3 class="art-title">Sketch 19</h3>
                     <p class="art-category">Sketch</p>
@@ -669,7 +677,7 @@
             </div>
 
             <div class="art-item scroll-animate" data-category="sketch">
-                <img class="art-img" src="jonson-master/assets/img/gallery/arts/20.jpg" alt="Sketch 20">
+                <img class="art-img" src="assets/img/gallery/arts/20.jpg" alt="Sketch 20">
                 <div class="art-overlay">
                     <h3 class="art-title">Sketch 20</h3>
                     <p class="art-category">Sketch</p>
@@ -677,7 +685,7 @@
             </div>
 
             <div class="art-item scroll-animate" data-category="sketch">
-                <img class="art-img" src="jonson-master/assets/img/gallery/arts/21.jpg" alt="Sketch 21">
+                <img class="art-img" src="assets/img/gallery/arts/21.jpg" alt="Sketch 21">
                 <div class="art-overlay">
                     <h3 class="art-title">Sketch 21</h3>
                     <p class="art-category">Sketch</p>
@@ -685,7 +693,7 @@
             </div>
 
             <div class="art-item scroll-animate" data-category="sketch">
-                <img class="art-img" src="jonson-master/assets/img/gallery/arts/22.jpg" alt="Sketch 22">
+                <img class="art-img" src="assets/img/gallery/arts/22.jpg" alt="Sketch 22">
                 <div class="art-overlay">
                     <h3 class="art-title">Sketch 22</h3>
                     <p class="art-category">Sketch</p>
@@ -693,7 +701,7 @@
             </div>
 
             <div class="art-item scroll-animate" data-category="sketch">
-                <img class="art-img" src="jonson-master/assets/img/gallery/arts/23.jpg" alt="Sketch 23">
+                <img class="art-img" src="assets/img/gallery/arts/23.jpg" alt="Sketch 23">
                 <div class="art-overlay">
                     <h3 class="art-title">Sketch 23</h3>
                     <p class="art-category">Sketch</p>
