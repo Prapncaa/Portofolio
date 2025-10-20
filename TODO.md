@@ -1,5 +1,4 @@
-- [ ] Update image src paths in index.html to include 'jonson-master/' prefix
-- [ ] Update image src paths in portfolio.html to include 'jonson-master/' prefix
-- [ ] Update local image src paths in arts.html to include 'jonson-master/' prefix
-- [ ] Update CV download link in index.html to include 'jonson-master/' prefix
-- [ ] Test that images load correctly after changes
+- [x] Add portfolio section to index.html after "My Expertise" section
+- [x] Include portfolio grid with spring.png, winter.png, spotipai.png, homeclean.png items
+- [x] Test that portfolio items display correctly in home section
+- [x] Make portfolio items clickable to link to https://www.behance.net/ajiprapanca
