@@ -620,6 +620,43 @@
             transform: translateY(-2px);
         }
 
+        /* Software Section */
+        .software-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 40px;
+            justify-items: center;
+        }
+
+        .software-item {
+            background: var(--bg-card);
+            padding: 40px 30px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            transition: all 0.4s;
+            cursor: pointer;
+        }
+
+        .software-item:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent-primary);
+            box-shadow: 0 20px 60px rgba(0, 255, 136, 0.2);
+        }
+
+        .software-item img {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .software-item p {
+            color: var(--text-secondary);
+            font-weight: 600;
+            font-size: 16px;
+        }
+
         /* Contact Section */
         .contact-wrapper {
             background: var(--bg-card);
@@ -1073,6 +1110,52 @@
                     <div class="portfolio-icon">+</div>
                 </div>
             </a>
+        </div>
+    </section>
+
+    <section id="software">
+        <h2 class="section-title scroll-animate">Software</h2>
+        <div class="software-grid scroll-animate">
+            <div class="software-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="software-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="software-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="software-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                <p>PHP</p>
+            </div>
+            <div class="software-item">
+                <img src="https://i.pinimg.com/1200x/ed/94/e3/ed94e3e6fae5dd09cd8f7652f4a01c3d.jpg" alt="Laravel">
+                <p>Laravel</p>
+            </div>
+            <div class="software-item">
+                <img src="https://i.pinimg.com/736x/14/d9/c1/14d9c13cc79126880b613683ac9e4ff2.jpg" alt="Adobe Illustrator">
+                <p>Adobe Illustrator</p>
+            </div>
+            <div class="software-item">
+                <img src="https://i.pinimg.com/736x/b1/c0/1d/b1c01d231c6b0e36bc2064e39ee8a14c.jpg   " alt="Adobe Photoshop">
+                <p>Adobe Photoshop</p>
+            </div>
+            <div class="software-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                <p>Figma</p>
+            </div>
+            <div class="software-item">
+                <img src="https://i.pinimg.com/736x/3c/24/31/3c243183094f621827490fc49afd71b8.jpg" alt="Canva">
+                <p>Canva</p>
+            </div>
+            <div class="software-item">
+                <img src="https://i.pinimg.com/736x/cf/5f/7d/cf5f7dca8d30d52a39f4043f3796d7f0.jpg" alt="GitHub">
+                <p>GitHub</p>
+            </div>
         </div>
     </section>
 

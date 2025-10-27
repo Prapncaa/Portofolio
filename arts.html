@@ -220,6 +220,19 @@
             box-shadow: 0 20px 60px rgba(0, 255, 136, 0.3);
         }
 
+        .banner-item {
+            grid-column: span 2;
+            aspect-ratio: auto;
+            height: auto;
+            min-height: 300px;
+        }
+
+        .banner-item .art-img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+
         .art-img {
             width: 100%;
             height: 100%;
@@ -725,6 +738,14 @@
 
 
             <!-- Graphic Design -->
+            <div class="art-item banner-item scroll-animate" data-category="graphic">
+                <img class="art-img" src="assets/img/gallery/uidesign/Banners.png" alt="Banners">
+                <div class="art-overlay">
+                    <h3 class="art-title">Banners</h3>
+                    <p class="art-category">Graphic Design</p>
+                </div>
+            </div>
+
             <div class="art-item scroll-animate" data-category="graphic">
                 <img class="art-img" src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=600&fit=crop" alt="Brand Identity">
                 <div class="art-overlay">
